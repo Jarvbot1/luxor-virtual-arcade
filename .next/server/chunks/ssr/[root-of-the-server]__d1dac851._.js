@@ -1,3 +1,0 @@
-module.exports=[64433,a=>{a.v({className:"inter_5972bc34-module__OU16Qa__className"})},78106,a=>{"use strict";var b=a.i(39163),c=a.i(64433);let d={className:c.default.className,style:{fontFamily:"'Inter', 'Inter Fallback'",fontStyle:"normal"}};function e({children:a}){return(0,b.jsx)("html",{lang:"en",children:(0,b.jsx)("body",{className:d.className,children:a})})}null!=c.default.variable&&(d.variable=c.default.variable),a.s(["default",()=>e,"metadata",0,{title:"Luxor Virtual Arcade - Your Local Getaway",description:"Join Luxor Virtual Arcade and play your favorite games. Royal Reels, Fish Tables, Dragon Slots and more. $15 free play when you join!"}],78106)}];
-
-//# sourceMappingURL=%5Broot-of-the-server%5D__d1dac851._.js.map
