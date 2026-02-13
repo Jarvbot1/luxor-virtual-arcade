@@ -202,7 +202,6 @@ export default function Home() {
               {[
                 { icon: '🎰', text: 'Royal Reels, Diamond Lotto, Keno' },
                 { icon: '🐉', text: 'Fish Tables & Dragon Slots' },
-                { icon: '🇪🇸', text: 'Se Habla Español' },
                 { icon: '🔞', text: 'Adults 18+ Only' },
               ].map((item, i) => (
                 <motion.div
