@@ -86,21 +86,42 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-[#D4AF37]/20">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center space-x-3">
+            <Image src="/luxor-logo-main.jpg" alt="Luxor Arcade" width={150} height={50} className="object-contain" />
+          </div>
+          <motion.a
+            href="#join"
+            whileHover={{ scale: 1.05 }}
+            className="px-6 py-2 bg-gradient-to-r from-[#D4AF37] to-[#FFD700] text-black font-bold rounded-lg text-sm"
+          >
+            Join Now
+          </motion.a>
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
+      <section className="relative min-h-screen flex items-center justify-center px-4 py-20 pt-32">
         {/* Animated Background */}
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
             animate={{
               background: [
-                'radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 50%)',
-                'radial-gradient(circle at 80% 50%, rgba(255, 20, 147, 0.15) 0%, transparent 50%)',
-                'radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 50%)',
+                'radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.3) 0%, rgba(138, 43, 226, 0.2) 30%, transparent 70%)',
+                'radial-gradient(circle at 80% 50%, rgba(255, 20, 147, 0.3) 0%, rgba(75, 0, 130, 0.2) 30%, transparent 70%)',
+                'radial-gradient(circle at 50% 80%, rgba(212, 175, 55, 0.3) 0%, rgba(138, 43, 226, 0.2) 30%, transparent 70%)',
+                'radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.3) 0%, rgba(138, 43, 226, 0.2) 30%, transparent 70%)',
               ],
             }}
-            transition={{ duration: 10, repeat: Infinity }}
+            transition={{ duration: 15, repeat: Infinity }}
             className="absolute inset-0"
           />
+          
+          {/* Additional gradient layers */}
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-pink-900/20" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-purple-500/10 to-transparent" />
           
           {/* Floating Coins */}
           {[...Array(15)].map((_, i) => (
@@ -182,7 +203,7 @@ export default function Home() {
                 { icon: '🎰', text: 'Royal Reels, Diamond Lotto, Keno' },
                 { icon: '🐉', text: 'Fish Tables & Dragon Slots' },
                 { icon: '🇪🇸', text: 'Se Habla Español' },
-                { icon: '🔞', text: 'Adults 21+ | Members Only' },
+                { icon: '🔞', text: 'Adults 18+ Only' },
               ].map((item, i) => (
                 <motion.div
                   key={i}
@@ -241,6 +262,7 @@ export default function Home() {
 
           {/* Right: Lead Form */}
           <motion.div
+            id="join"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -356,7 +378,7 @@ export default function Home() {
                 </motion.button>
 
                 <p className="text-xs text-gray-400 text-center">
-                  By signing up, you confirm you are 21+ and agree to our terms.
+                  By signing up, you confirm you are 18+ and agree to our terms.
                 </p>
               </form>
             </motion.div>
@@ -458,7 +480,7 @@ export default function Home() {
       <footer className="py-8 px-4 border-t border-gray-800">
         <div className="max-w-7xl mx-auto text-center text-gray-500 text-sm">
           <p className="mb-2">© 2026 Luxor Virtual Arcade. All rights reserved.</p>
-          <p>Adults 21+ only. Members-only skill-based entertainment. Please play responsibly.</p>
+          <p>Adults 18+ only. Skill-based entertainment. Please play responsibly.</p>
         </div>
       </footer>
     </div>
