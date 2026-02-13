@@ -401,9 +401,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { img: '/royal-reels-promo-new.jpg', name: 'Royal Reels', desc: 'One of Our Most Popular Games' },
-              { img: '/diamond-lotto-promo.jpg', name: 'Diamond Lotto', desc: 'Win Big Jackpots' },
-              { img: '/slot-machine-dragon.jpg', name: 'Dragon Slots', desc: 'High-Stakes Asian-Themed Slots' },
+              { img: '/2026-02-13-03-38-royal-reels-game.png', name: 'Royal Reels', desc: 'Classic Slots with Royal Symbols' },
+              { img: '/2026-02-13-03-39-diamond-lotto-game.png', name: 'Diamond Lotto', desc: 'Win Big Jackpots' },
+              { img: '/2026-02-13-03-40-dragon-slots-game.png', name: 'Dragon Slots', desc: 'Asian-Themed High-Stakes Slots' },
             ].map((game, i) => (
               <motion.div
                 key={i}
