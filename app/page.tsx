@@ -273,7 +273,7 @@ export default function Home() {
                 transition={{ delay: 0.6 }}
                 className="text-center text-gray-300 mb-8"
               >
-                Start playing in 60 seconds • 18+ only
+                Start playing in 10 minutes • 18+ only
               </motion.p>
 
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
@@ -394,9 +394,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { num: '1', icon: '📝', title: 'Sign Up', desc: 'Create your account in 60 seconds' },
-              { num: '2', icon: '💳', title: 'Deposit', desc: 'Add funds and claim your bonus' },
-              { num: '3', icon: '🎮', title: 'Play', desc: 'Start winning at your favorite games' },
+              { num: '1', icon: '📝', title: 'Fill Out Account Request', desc: 'Complete the form with your details' },
+              { num: '2', icon: '📱', title: 'Receive Your Login', desc: 'Get text with unique ID, password & payment link' },
+              { num: '3', icon: '💳', title: 'Check Out & Play', desc: 'Fund your account and start playing!' },
             ].map((step, i) => (
               <motion.div
                 key={i}
