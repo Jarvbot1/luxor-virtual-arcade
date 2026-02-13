@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
 2:I[58580,["/luxor-virtual-arcade/_next/static/chunks/d5dbaea5233cbdf0.js","/luxor-virtual-arcade/_next/static/chunks/6e3420c1a9c868ae.js"],"ClientPageRoot"]
-3:I[55620,["/luxor-virtual-arcade/_next/static/chunks/d5dbaea5233cbdf0.js","/luxor-virtual-arcade/_next/static/chunks/78e52014de8c87a2.js"],"default"]
+3:I[55620,["/luxor-virtual-arcade/_next/static/chunks/d5dbaea5233cbdf0.js","/luxor-virtual-arcade/_next/static/chunks/bf9faac6f4ec7ae6.js"],"default"]
 6:I[39295,["/luxor-virtual-arcade/_next/static/chunks/d5dbaea5233cbdf0.js","/luxor-virtual-arcade/_next/static/chunks/6e3420c1a9c868ae.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"buildId":"zpY1Fo5axVFx7DiBIli8B","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/luxor-virtual-arcade/_next/static/chunks/d5dbaea5233cbdf0.js","async":true}],["$","script","script-1",{"src":"/luxor-virtual-arcade/_next/static/chunks/78e52014de8c87a2.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"TejxWIQJLYNo9cWUu7EKR","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/luxor-virtual-arcade/_next/static/chunks/d5dbaea5233cbdf0.js","async":true}],["$","script","script-1",{"src":"/luxor-virtual-arcade/_next/static/chunks/bf9faac6f4ec7ae6.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
