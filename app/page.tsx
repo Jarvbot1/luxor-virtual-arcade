@@ -87,15 +87,15 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-[#D4AF37]/20">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <Image src="/luxor-logo-main.jpg" alt="Luxor Arcade" width={150} height={50} className="object-contain" />
+      <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-[#D4AF37]/20">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+          <div className="flex items-center space-x-3 h-12">
+            <Image src="/luxor-logo-main.jpg" alt="Luxor Arcade" width={100} height={40} className="object-contain h-10 w-auto" />
           </div>
           <motion.a
             href="#join"
             whileHover={{ scale: 1.05 }}
-            className="px-6 py-2 bg-gradient-to-r from-[#D4AF37] to-[#FFD700] text-black font-bold rounded-lg text-sm"
+            className="px-4 py-2 bg-gradient-to-r from-[#D4AF37] to-[#FFD700] text-black font-bold rounded-lg text-sm"
           >
             Join Now
           </motion.a>
@@ -103,7 +103,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 py-20 pt-32">
+      <section className="relative min-h-screen flex items-center justify-center px-4 py-20 pt-20">
         {/* Animated Background */}
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
