@@ -181,7 +181,6 @@ export default function Home() {
               {[
                 { icon: '🎰', text: 'Royal Reels, Diamond Lotto, Keno' },
                 { icon: '🐉', text: 'Fish Tables & Dragon Slots' },
-                { icon: '💰', text: '$15 Free Play When You Join' },
                 { icon: '🇪🇸', text: 'Se Habla Español' },
                 { icon: '🔞', text: 'Adults 21+ | Members Only' },
               ].map((item, i) => (
@@ -196,6 +195,30 @@ export default function Home() {
                   <span className="text-lg text-gray-200">{item.text}</span>
                 </motion.div>
               ))}
+            </motion.div>
+
+            {/* Deposit Bonuses */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1 }}
+              className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 border border-[#D4AF37] rounded-lg p-6 mb-8"
+            >
+              <p className="text-[#FFD700] font-bold text-lg mb-4 text-center">💰 Deposit Bonuses</p>
+              <div className="space-y-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-white">Deposit $20</span>
+                  <span className="text-[#FF1493] font-bold">→ Get $5 FREE</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-white">Deposit $50</span>
+                  <span className="text-[#FF1493] font-bold">→ Get $10 FREE</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-white">Deposit $100</span>
+                  <span className="text-[#FF1493] font-bold">→ Get $20 FREE</span>
+                </div>
+              </div>
             </motion.div>
 
             {/* Trust Badges */}
@@ -329,7 +352,7 @@ export default function Home() {
                   disabled={isLoading}
                   className="w-full py-4 bg-gradient-to-r from-[#D4AF37] to-[#FFD700] text-black font-bold text-lg rounded-lg hover:from-[#FFD700] hover:to-[#D4AF37] transition-all duration-300 disabled:opacity-50"
                 >
-                  {isLoading ? 'Creating Your Account...' : 'Get $15 Free Play'}
+                  {isLoading ? 'Creating Your Account...' : 'Start Playing Now'}
                 </motion.button>
 
                 <p className="text-xs text-gray-400 text-center">
