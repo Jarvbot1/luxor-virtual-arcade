@@ -108,15 +108,15 @@ export default function Home() {
               key={i}
               className="absolute text-4xl"
               initial={{
-                x: Math.random() * window.innerWidth,
-                y: Math.random() * window.innerHeight,
+                x: Math.random() * 1200,
+                y: Math.random() * 800,
                 opacity: 0.3,
               }}
               animate={{
                 y: [
-                  Math.random() * window.innerHeight,
-                  Math.random() * window.innerHeight - 100,
-                  Math.random() * window.innerHeight,
+                  Math.random() * 800,
+                  Math.random() * 800 - 100,
+                  Math.random() * 800,
                 ],
                 rotate: [0, 360],
               }}
