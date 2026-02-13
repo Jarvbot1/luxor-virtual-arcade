@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Luxor Virtual Arcade - Your Local Getaway",
-  description: "Join Luxor Virtual Arcade and play your favorite games. Royal Reels, Fish Tables, Dragon Slots and more. $15 free play when you join!",
+  title: "Luxor Online Casino - Play Premium Casino Games",
+  description: "Join Luxor Online Casino. 100+ premium games, generous bonuses, instant payouts. Slots, table games, live dealer. 18+ Play responsibly.",
 };
 
 export default function RootLayout({
