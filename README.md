@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Luxor Virtual Arcade - Landing Page
+
+Animated landing page for Luxor Virtual Arcade with lead capture form and game showcase.
+
+## Features
+
+- 🎰 **Animated Hero Section** - Floating coins, gradient color transitions
+- 📝 **Lead Capture Form** - Full validation (name, phone, email, DOB, state)
+- ✅ **Success Screen** - "We'll text you in 10 minutes" workflow
+- 🎮 **Games Showcase** - Royal Reels, Dragon Slots, Fish Tables, Diamond Lotto
+- 📱 **Mobile Responsive** - Optimized for all devices
+- 🎨 **Brand Colors** - Gold (#D4AF37, #FFD700), Hot Pink (#FF1493), Black, Purple gradients
+
+## Tech Stack
+
+- **Next.js 16.1.6** (App Router, TypeScript)
+- **Tailwind CSS** - Utility-first styling
+- **Framer Motion** - Smooth animations
+- **React Hook Form** - Form validation
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/Jarvbot1/luxor-virtual-arcade.git
+cd luxor-virtual-arcade
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Deploy to Vercel (Recommended)
 
-## Learn More
+1. Push this repo to GitHub (already done!)
+2. Visit [vercel.com](https://vercel.com)
+3. Click "New Project"
+4. Import `Jarvbot1/luxor-virtual-arcade`
+5. Click "Deploy" (no configuration needed)
+6. Your site will be live in ~2 minutes!
 
-To learn more about Next.js, take a look at the following resources:
+### Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+For form submission integration:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```env
+NEXT_PUBLIC_ZAPIER_WEBHOOK_URL=your_zapier_webhook_url
+```
 
-## Deploy on Vercel
+## Form Integration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The form currently logs to console. To integrate with Google Sheets:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Create a Zapier account
+2. Set up a webhook trigger
+3. Connect to Google Sheets
+4. Add webhook URL to form submission in `app/page.tsx` line 33
+
+## Brand Assets
+
+All brand images are included in `/public/`:
+- `luxor-hero.jpg` - Main promotional graphic
+- `luxor-logo-main.jpg` - Logo
+- `slot-machine-*.jpg` - Game machine photos
+- `royal-reels-promo.jpg` - Game promotional images
+- `diamond-lotto-promo.jpg` - Lotto promotional image
+
+## Customization
+
+### Update Colors
+
+Edit Tailwind config or inline styles:
+- Gold: `#D4AF37` → `#FFD700`
+- Pink: `#FF1493`
+- Purple gradients: `from-purple-900 to-black`
+
+### Update Copy
+
+Edit `app/page.tsx`:
+- Hero headlines (line 73-85)
+- Benefits list (line 96-105)
+- Games showcase (line 263-267)
+- Social proof (line 298-309)
+
+## Project Structure
+
+```
+├── app/
+│   ├── globals.css       # Global styles
+│   ├── layout.tsx        # Root layout + metadata
+│   └── page.tsx          # Main landing page component
+├── public/               # Static assets (images)
+├── package.json          # Dependencies
+└── README.md            # This file
+```
+
+## License
+
+Private - Nixar Solutions © 2026
+
+## Support
+
+For questions or issues, contact Nixar Solutions.
